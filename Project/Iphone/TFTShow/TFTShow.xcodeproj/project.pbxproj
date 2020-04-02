@@ -21,6 +21,10 @@
 		086AD8542434CF4A00B0059F /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086AD8532434CF4A00B0059F /* HeroView.swift */; };
 		086AD8562434D0B900B0059F /* DataLoadModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086AD8552434D0B900B0059F /* DataLoadModule.swift */; };
 		086AD85D2434E5D400B0059F /* E+Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086AD85C2434E5D400B0059F /* E+Object.swift */; };
+		0881554D24363A0700BF302D /* E+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881554C24363A0700BF302D /* E+View.swift */; };
+		0881554F2436442E00BF302D /* E+Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881554E2436442E00BF302D /* E+Pop.swift */; };
+		08815551243649EF00BF302D /* E+Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08815550243649EF00BF302D /* E+Button.swift */; };
+		0881555324364A2C00BF302D /* E+Lbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0881555224364A2C00BF302D /* E+Lbl.swift */; };
 		BEBE11D3E576B7C5AED32370 /* Pods_TFTShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DED9EC6D28D0BEE9B431B34 /* Pods_TFTShow.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		086AD8532434CF4A00B0059F /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
 		086AD8552434D0B900B0059F /* DataLoadModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadModule.swift; sourceTree = "<group>"; };
 		086AD85C2434E5D400B0059F /* E+Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+Object.swift"; sourceTree = "<group>"; };
+		0881554C24363A0700BF302D /* E+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+View.swift"; sourceTree = "<group>"; };
+		0881554E2436442E00BF302D /* E+Pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+Pop.swift"; sourceTree = "<group>"; };
+		08815550243649EF00BF302D /* E+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+Button.swift"; sourceTree = "<group>"; };
+		0881555224364A2C00BF302D /* E+Lbl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+Lbl.swift"; sourceTree = "<group>"; };
 		15F88E6BC3D258E1E38845D2 /* Pods-TFTShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTShow.release.xcconfig"; path = "Target Support Files/Pods-TFTShow/Pods-TFTShow.release.xcconfig"; sourceTree = "<group>"; };
 		4DED9EC6D28D0BEE9B431B34 /* Pods_TFTShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFTShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A46315936D26568BD120737 /* Pods-TFTShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFTShow.debug.xcconfig"; path = "Target Support Files/Pods-TFTShow/Pods-TFTShow.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				086AD85C2434E5D400B0059F /* E+Object.swift */,
+				0881554C24363A0700BF302D /* E+View.swift */,
+				08815550243649EF00BF302D /* E+Button.swift */,
+				0881555224364A2C00BF302D /* E+Lbl.swift */,
+				0881554E2436442E00BF302D /* E+Pop.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -328,14 +340,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				086AD82E2434B99A00B0059F /* ViewController.swift in Sources */,
+				0881554F2436442E00BF302D /* E+Pop.swift in Sources */,
 				086AD82A2434B99A00B0059F /* AppDelegate.swift in Sources */,
 				086AD85D2434E5D400B0059F /* E+Object.swift in Sources */,
 				086AD8542434CF4A00B0059F /* HeroView.swift in Sources */,
 				086AD84A2434BAD500B0059F /* MonsterModule.swift in Sources */,
 				086AD84C2434BAE000B0059F /* CardPoolModule.swift in Sources */,
 				086AD8562434D0B900B0059F /* DataLoadModule.swift in Sources */,
+				0881554D24363A0700BF302D /* E+View.swift in Sources */,
+				08815551243649EF00BF302D /* E+Button.swift in Sources */,
 				086AD8462434BAC100B0059F /* ItemModule.swift in Sources */,
 				086AD8502434BB0000B0059F /* UserInfo.swift in Sources */,
+				0881555324364A2C00BF302D /* E+Lbl.swift in Sources */,
 				086AD8482434BACB00B0059F /* HeroModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

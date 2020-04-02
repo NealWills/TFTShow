@@ -8,9 +8,11 @@
 
 import Foundation
 
-extension NSObject {
-    
-    
+protocol ObjectShowInfoProtocol { }
+
+extension NSObject: ObjectShowInfoProtocol { }
+
+extension ObjectShowInfoProtocol where Self: NSObject {
     func detailDescribe() {
         
         let arrPro = get_class_copyPropertyList()
@@ -23,11 +25,7 @@ extension NSObject {
         
     }
     
-}
-
-
-extension NSObject {
-    fileprivate func get_class_copyPropertyList()->[String]{
+    func get_class_copyPropertyList()->[String]{
         var outCount:UInt32 = 0
         let propers:UnsafeMutablePointer<objc_property_t>! =  class_copyPropertyList(self.classForCoder, &outCount)
         let count:Int = Int(outCount);
@@ -41,3 +39,4 @@ extension NSObject {
         return names
     }
 }
+

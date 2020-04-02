@@ -43,10 +43,15 @@ class ViewController: UIViewController {
         LocalData.load(from: "HeroPlist")
             .subscribe(onSuccess: { [weak self] (dic) in
                 self?.hero = HeroBase.init(hero: dic["bobi"] as! [String:Any])
-                print(self!.hero.description)
+                self!.hero.detailDescribe()
+                print(self?.hero.get_class_copyPropertyList())
             }) { (err) in
                 print(err)
             }.disposed(by: self.disposeBag)
+        
+        
+        PopViewBase().show(during: 0.3)
+        
     }
 
 
