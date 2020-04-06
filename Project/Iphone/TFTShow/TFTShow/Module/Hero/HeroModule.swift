@@ -9,13 +9,18 @@
 import Foundation
 
 class HeroBase :NSObject {
-
+    
+    /// 头像
+    var avatar: String
+    
+    /// 皮肤
+    var skin: String
     
     /// 费用
     var cast: Int
     
     /// 羁绊效果
-    var character: [String]
+    var traits: [String]
     
     /// 英雄名字
     var name: String
@@ -54,8 +59,10 @@ class HeroBase :NSObject {
     init(hero dic: [String:Any]) {
         
         self.cast = dic["cast"] as? Int ?? 99999
-        self.character = dic["character"] as? [String] ?? []
+        self.traits = dic["traits"] as? [String] ?? []
         self.name = dic["name"] as? String ?? ""
+        self.avatar = dic["avatar"] as? String ?? ""
+        self.skin = dic["skin"] as? String ?? ""
         
         let dicSkill = dic["skill"] as? [String:Any] ?? [:]
         self.skill = (dicSkill["name"] as? String ?? "", dicSkill["describe"] as? String ?? "")
@@ -75,11 +82,12 @@ class HeroBase :NSObject {
         
     }
     
+    
     override var description: String {
         get {
             print("===========================")
             print(" ", "cast", ":", self.cast)
-            print(" ", "character", ":", self.character)
+            print(" ", "character", ":", self.traits)
             print(" ", "name", ":", self.name)
             print(" ", "skill", ":", self.skill)
             print(" ", "armor", ":", self.armor)

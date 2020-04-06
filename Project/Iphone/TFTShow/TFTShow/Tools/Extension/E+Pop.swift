@@ -9,6 +9,8 @@
 import Foundation
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 protocol PopBaseProtocol {
     func show(during second:TimeInterval?)
@@ -29,11 +31,19 @@ class PopViewBase: UIView {
     var animationTime: TimeInterval!
     var isShow: Bool?
     
+    var disposeBag = DisposeBag()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setMainBase()
+        self.setMain()
     }
     
+//    
+//    convenience init() {
+//        self.init(frame: UIScreen.main.bounds)
+//        self.setMainBase()
+//    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -56,11 +66,11 @@ extension PopBaseProtocol where Self: PopViewBase {
 }
 
 
-fileprivate extension PopBaseProtocol where Self: PopViewBase {
+extension PopBaseProtocol where Self: PopViewBase {
     
     func showBase() {
         self.isUserInteractionEnabled = false
-        self.isHidden = true
+        self.isHidden = false
         UIView.animate(withDuration: self.animationTime, animations: {
             self.alpha = 1.0
         }) { [weak self] (_) in
@@ -85,6 +95,10 @@ fileprivate extension PopBaseProtocol where Self: PopViewBase {
             .set(snpClousure: { (make) in
                 make.edges.equalTo(self)
             })
+        self.btnM.rx.tap.subscribe(onNext: { [weak self] (_) in
+            self?.dismiss()
+        }).disposed(by: self.disposeBag)
+        
     }
     
 }

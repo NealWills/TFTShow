@@ -27,6 +27,7 @@ protocol BaseViewSetProtocol {
     @discardableResult
     func set(shadowColor: UIColor?, shadowOffset: CGSize?, shadowRadius: CGFloat?, shadowOpacity: Float?) -> Self
     
+    
 }
 
 
@@ -66,6 +67,12 @@ extension UIView: BaseViewSetProtocol {
     }
     
     @discardableResult
+    func set(viewMode: UIView.ContentMode) -> Self {
+        self.contentMode = viewMode;
+        return self
+    }
+    
+    @discardableResult
     func set(shadowColor: UIColor?=#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), shadowOffset: CGSize?=CGSize.zero, shadowRadius: CGFloat?=0, shadowOpacity: Float?=0) -> Self {
         self.layer.shadowColor = (shadowColor ?? #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)).cgColor
         self.layer.shadowOffset = shadowOffset ?? .zero
@@ -73,6 +80,13 @@ extension UIView: BaseViewSetProtocol {
         self.layer.shadowOpacity = shadowOpacity ?? 0
         return self
     }
+    
+    @discardableResult
+    func set(tag: NSInteger) -> Self {
+        self.tag = tag
+        return self
+    }
+    
     
 }
 

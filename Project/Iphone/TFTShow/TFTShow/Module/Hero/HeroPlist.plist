@@ -2,12 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>bobi</key>
+	<key>poppy</key>
 	<dict>
+		<key>avatar</key>
+		<string>ic-avatar-poppy</string>
+		<key>skin</key>
+		<string>ic-skin-poppy</string>
 		<key>cast</key>
 		<integer>1</integer>
 		<key>name</key>
-		<string>波比</string>
+		<string>poppy</string>
 		<key>skill</key>
 		<dict>
 			<key>describe</key>
@@ -15,10 +19,10 @@
 			<key>name</key>
 			<string>圆盾投掷</string>
 		</dict>
-		<key>character</key>
+		<key>traits</key>
 		<array>
-			<string>星之守护者</string>
-			<string>重装战士</string>
+			<string>starguardian</string>
+			<string>vanguard</string>
 		</array>
 		<key>star</key>
 		<array>

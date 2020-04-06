@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		085AFF3124399E020072ACE3 /* E+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085AFF3024399E020072ACE3 /* E+UIImageView.swift */; };
+		085AFF332439D45B0072ACE3 /* E+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085AFF322439D45B0072ACE3 /* E+String.swift */; };
+		085AFF352439E1A40072ACE3 /* HeroTotolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085AFF342439E1A40072ACE3 /* HeroTotolView.swift */; };
+		085AFF37243B215D0072ACE3 /* HeroDeatilBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085AFF36243B215D0072ACE3 /* HeroDeatilBaseView.swift */; };
+		085AFF39243B271B0072ACE3 /* HeroSkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085AFF38243B271B0072ACE3 /* HeroSkillView.swift */; };
 		086AD82A2434B99A00B0059F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086AD8292434B99A00B0059F /* AppDelegate.swift */; };
 		086AD82E2434B99A00B0059F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086AD82D2434B99A00B0059F /* ViewController.swift */; };
 		086AD8312434B99A00B0059F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086AD82F2434B99A00B0059F /* Main.storyboard */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		085AFF3024399E020072ACE3 /* E+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+UIImageView.swift"; sourceTree = "<group>"; };
+		085AFF322439D45B0072ACE3 /* E+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "E+String.swift"; sourceTree = "<group>"; };
+		085AFF342439E1A40072ACE3 /* HeroTotolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTotolView.swift; sourceTree = "<group>"; };
+		085AFF36243B215D0072ACE3 /* HeroDeatilBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDeatilBaseView.swift; sourceTree = "<group>"; };
+		085AFF38243B271B0072ACE3 /* HeroSkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSkillView.swift; sourceTree = "<group>"; };
 		086AD8262434B99A00B0059F /* TFTShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFTShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		086AD8292434B99A00B0059F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		086AD82D2434B99A00B0059F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +160,9 @@
 			children = (
 				086AD8472434BACB00B0059F /* HeroModule.swift */,
 				086AD8532434CF4A00B0059F /* HeroView.swift */,
+				085AFF342439E1A40072ACE3 /* HeroTotolView.swift */,
+				085AFF36243B215D0072ACE3 /* HeroDeatilBaseView.swift */,
+				085AFF38243B271B0072ACE3 /* HeroSkillView.swift */,
 				086AD8512434C8F000B0059F /* HeroPlist.plist */,
 			);
 			path = Hero;
@@ -201,7 +214,9 @@
 				0881554C24363A0700BF302D /* E+View.swift */,
 				08815550243649EF00BF302D /* E+Button.swift */,
 				0881555224364A2C00BF302D /* E+Lbl.swift */,
+				085AFF3024399E020072ACE3 /* E+UIImageView.swift */,
 				0881554E2436442E00BF302D /* E+Pop.swift */,
+				085AFF322439D45B0072ACE3 /* E+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -339,9 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085AFF332439D45B0072ACE3 /* E+String.swift in Sources */,
+				085AFF39243B271B0072ACE3 /* HeroSkillView.swift in Sources */,
 				086AD82E2434B99A00B0059F /* ViewController.swift in Sources */,
 				0881554F2436442E00BF302D /* E+Pop.swift in Sources */,
 				086AD82A2434B99A00B0059F /* AppDelegate.swift in Sources */,
+				085AFF37243B215D0072ACE3 /* HeroDeatilBaseView.swift in Sources */,
+				085AFF352439E1A40072ACE3 /* HeroTotolView.swift in Sources */,
 				086AD85D2434E5D400B0059F /* E+Object.swift in Sources */,
 				086AD8542434CF4A00B0059F /* HeroView.swift in Sources */,
 				086AD84A2434BAD500B0059F /* MonsterModule.swift in Sources */,
@@ -350,6 +369,7 @@
 				0881554D24363A0700BF302D /* E+View.swift in Sources */,
 				08815551243649EF00BF302D /* E+Button.swift in Sources */,
 				086AD8462434BAC100B0059F /* ItemModule.swift in Sources */,
+				085AFF3124399E020072ACE3 /* E+UIImageView.swift in Sources */,
 				086AD8502434BB0000B0059F /* UserInfo.swift in Sources */,
 				0881555324364A2C00BF302D /* E+Lbl.swift in Sources */,
 				086AD8482434BACB00B0059F /* HeroModule.swift in Sources */,

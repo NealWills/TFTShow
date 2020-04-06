@@ -28,29 +28,49 @@ class ViewController: UIViewController {
         }
     }
     private var _disposeBag: DisposeBag!
-    var heroView: HeroView!
+    var heroView: HeroTotolView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.heroView = HeroView()
-        self.view.addSubview(self.heroView)
-        self.heroView.snp.makeConstraints { (make) in
-            make.center.equalTo(self.view)
-        }
+//        self.heroView = HeroView(frame: UIScreen.main.bounds)
+//            .set(superView: self.view)
+//            .set(snpClousure: { (make) in
+////                make.center.equalTo(self.view)
+//                make.edges.equalTo(self.view)
+//            })
+//
+//        self.heroView.show(during: 0.2)
         
-        LocalData.load(from: "HeroPlist")
-            .subscribe(onSuccess: { [weak self] (dic) in
-                self?.hero = HeroBase.init(hero: dic["bobi"] as! [String:Any])
-                self!.hero.detailDescribe()
-                print(self?.hero.get_class_copyPropertyList())
-            }) { (err) in
-                print(err)
-            }.disposed(by: self.disposeBag)
+//
+//        self.heroView = HeroTotolView()
+//            .set(superView: self.view)
+//            .set { (make) in
+//                make.leading.equalTo(self.view)
+//                make.top.equalTo(self.view)
+//            }
+        
+        HeroSkillView()
+            .set(superView: self.view)
+            .set { (make) in
+                make.center.equalTo(self.view)
+            }
+            .setMain()
         
         
-        PopViewBase().show(during: 0.3)
+//        LocalData.load(from: "HeroPlist")
+//            .subscribe(onSuccess: { [weak self] (dic) in
+//                self?.hero = HeroBase.init(hero: dic["poppy"] as! [String:Any])
+//                self?.heroView.set(hero: (self?.hero)!)
+//            }) { (err) in
+//                print(err)
+//            }.disposed(by: self.disposeBag)
+//
+//
+//        PopViewBase().show(during: 0.3)
         
     }
 
